@@ -20,14 +20,12 @@
         </div>
         <h2>清單內容</h2>
         <ol>
-            <li class="buy_item" v-for="name in names" >
+            <li v-for="(name) in names">
                 {{name.content}}
                 -<a href="#" @click.prevent="delList(name)">刪除</a>
             </li>  
-           <li class="buy_item total">訂單總金額:{{total}}</li>  
-           
+           <h5>訂單總金額:{{total}}</h5>  
         </ol>
-
     
     </div>
     <script src="scripts\main.js"></script>
